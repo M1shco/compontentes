@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { BotonesComponent } from './botones/botones.component';
 import { InputsComponent } from './inputs/inputs.component';
 import { VisualizadorComponent } from './visualizador/visualizador.component';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, BotonesComponent, InputsComponent, VisualizadorComponent],
+  imports: [RouterOutlet, BotonesComponent, InputsComponent, VisualizadorComponent, NgIf],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

@@ -1,25 +1,60 @@
+/* Contenedor de los campos */
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* Campos no editables */
+.non-editable {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #555;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del cuadrado/círculo */
 .square {
   width: 100px;
   height: 100px;
-  background: linear-gradient(45deg, purple, magenta);
-  border-radius: 5px; /* Por defecto es un cuadrado */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  text-align: center;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+  background-color: beige;
 }
 
-.circle {
-  border-radius: 50%; /* Convierte el cuadrado en un círculo */
-}
-
+/* Estilo dinámico para el estado Aceptar */
 .green {
-  background: green;
+  background: #4caf50;
 }
 
+/* Estilo dinámico para el estado Cancelar */
 .red {
-  background: red;
+  background: #f44336;
+}
+
+/* Si es un círculo */
+.circle {
+  border-radius: 50%;
 }

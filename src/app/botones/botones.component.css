@@ -1,58 +1,92 @@
-.button-primario {
-    background-color: #2196F3;
-}
 .button {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    padding: 10px 20px;
-    border-radius: 25px;
+    font-family: 'Roboto', sans-serif; /* Nueva tipografía */
+    font-size: 16px; /* Tamaño más grande */
+    padding: 12px 25px;
+    border-radius: 8px;
     color: #fff;
     border: none;
     cursor: pointer;
-    outline: none;
-}
-.button-aceptar {
-    background-color: #4CAF50;
-}
-.button-cancelar {
-    background-color: #f44336;
-}
-.button-modo-oscuro {
-    background-color: #000;
-    position: relative;
-    width: 15vh;
-}
-
-/* Icono de media luna en el botón negro */
-.button-modo-oscuro::before {
-    content: "🌙";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .button:hover {
+    transform: translateY(-2px); /* Efecto hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .button-aceptar {
+    background-color: #28a745; /* Verde más moderno */
+  }
+  
+  .button-aceptar:hover {
+    background-color: #218838;
+  }
+  
+  .button-cancelar {
+    background-color: #dc3545; /* Rojo más vibrante */
+  }
+  
+  .button-cancelar:hover {
+    background-color: #c82333;
+  }
+  
+  .button-primario {
+    background-color: #007bff; /* Azul estándar */
+  }
+  
+  .button-primario:hover {
+    background-color: #0056b3;
+  }
+  
+  .button-secundario {
+    background-color: #17a2b8; /* Azul claro */
     color: #fff;
-}
-.button-secundario {
-    background-color: #00bcd4;
-    color: #000; /* Texto en negro para mayor contraste */
-}
-.contenedor-principal {
+  }
+  
+  .button-secundario:hover {
+    background-color: #117a8b;
+  }
+  
+  .button-modo-oscuro {
+    background-color: #343a40; /* Gris oscuro */
+    color: #f8f9fa; /* Blanco roto */
+    position: relative;
+    width: 60px;
+    font-size: 18px;
+    font-weight: bold;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-/* Contenedor de los botones */
-.botones-contenedor {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Fila de botones para organizar dos en una fila */
-.fila {
-    display: flex;
-    gap: 10px;
     justify-content: center;
-}
+    align-items: center;
+    border-radius: 50%;
+    height: 60px;
+  }
+  
+  .button-modo-oscuro::before {
+    content: "🌙";
+    font-size: 30px;
+  }
+  .button-primario {
+    background-color: #007bff; /* Azul moderno */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button-primario:hover {
+    background-color: #0056b3; /* Azul más oscuro en hover */
+    transform: translateY(-2px); /* Efecto sutil de elevación */
+  }
+  .button-modo-oscuro {
+    position: absolute; /* Posiciona el botón en un lugar específico */
+    top: 10px;         /* Distancia desde la parte superior */
+    left: 10px;        /* Distancia desde la izquierda */
+    z-index: 1000;     /* Asegura que el botón esté por encima de otros elementos */
+  }
+  
+  
