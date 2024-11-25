@@ -1,0 +1,58 @@
+.button-primario {
+    background-color: #2196F3;
+}
+.button {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.button-aceptar {
+    background-color: #4CAF50;
+}
+.button-cancelar {
+    background-color: #f44336;
+}
+.button-modo-oscuro {
+    background-color: #000;
+    position: relative;
+    width: 15vh;
+}
+
+/* Icono de media luna en el botón negro */
+.button-modo-oscuro::before {
+    content: "🌙";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.button-secundario {
+    background-color: #00bcd4;
+    color: #000; /* Texto en negro para mayor contraste */
+}
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Contenedor de los botones */
+.botones-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Fila de botones para organizar dos en una fila */
+.fila {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}

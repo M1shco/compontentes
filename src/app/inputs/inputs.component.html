@@ -1,0 +1,33 @@
+<div class="form-group">
+  <label class="label label-correcto" for="correo">Correo</label>
+  <input
+    type="email"
+    id="correo"
+    class="input input-correcto"
+    [value]="email"
+    (input)="onEmailChange($event)"
+  />
+</div>
+
+<div class="form-group">
+  <label class="label label-error" for="contrasena">Contraseña</label>
+  <input
+    type="password"
+    id="contrasena"
+    class="input input-error"
+    [value]="password"
+    (input)="onPasswordChange($event)"
+  />
+</div>
+
+<div class="form-group">
+  <label class="label" for="texto">Texto</label>
+  <input
+    type="text"
+    id="texto"
+    class="input"
+    placeholder="Ingrese Texto"
+    [value]="texto"
+    (input)="onTextoChange($event)"
+  />
+</div>

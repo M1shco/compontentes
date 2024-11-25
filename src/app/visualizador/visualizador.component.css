@@ -1,0 +1,25 @@
+.square {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg, purple, magenta);
+  border-radius: 5px; /* Por defecto es un cuadrado */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.circle {
+  border-radius: 50%; /* Convierte el cuadrado en un círculo */
+}
+
+.green {
+  background: green;
+}
+
+.red {
+  background: red;
+}

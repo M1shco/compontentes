@@ -1,0 +1,19 @@
+<div class="fields">
+  <p><strong>Correo</strong></p>
+  <div class="non-editable">{{ email }}</div>
+
+  <p><strong>Contraseña</strong></p>
+  <div class="non-editable">{{ password }}</div>
+
+  <p><strong>Texto</strong></p>
+  <div class="non-editable">{{ texto }}</div>
+</div>
+
+<div
+  class="square"
+  [ngClass]="{ 'circle': isCircle, green: estado === 'Aceptar', red: estado === 'Cancelar' }"
+  [style.background]="customColor"
+>
+  <p>{{ estado }}</p>
+</div>
+

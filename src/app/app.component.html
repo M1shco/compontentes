@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="left">
+    <app-botones (accion)="onAccion($event)"></app-botones>
+    <app-inputs
+      [email]="email"
+      [password]="password"
+      [texto]="texto"
+      (emailChange)="updateEmail($event)"
+      (passwordChange)="updatePassword($event)"
+      (textoChange)="updateTexto($event)"
+    ></app-inputs>
+  </div>
+  <div class="right">
+    <app-visualizador
+      [email]="email"
+      [password]="password"
+      [texto]="texto"
+      [estado]="estado"
+      [isCircle]="isCircle"
+      [customColor]="customColor"
+    ></app-visualizador>
+  </div>
+</div>

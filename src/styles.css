@@ -1,0 +1,53 @@
+body.dark-mode {
+    background-color: #121212; /* Fondo gris oscuro para la app */
+    color: #e0e0e0; /* Texto gris claro */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Animación suave */
+  }
+  
+  /* Botones en modo oscuro */
+  body.dark-mode button {
+    background-color: #1f1f1f; /* Fondo gris oscuro */
+    color: #e0e0e0; /* Texto claro */
+    border: 1px solid #333; /* Borde oscuro */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Cuadros no editables */
+  body.dark-mode .non-editable {
+    background-color: #1e1e1e; /* Fondo gris oscuro */
+    border-color: #333; /* Borde más oscuro */
+    color: #e0e0e0; /* Texto claro */
+  }
+  
+  /* Square y Circle */
+  body.dark-mode .square {
+   
+    color: #e0e0e0; /* Texto claro */
+  }
+  
+  /* Contenedores */
+  body.dark-mode .container {
+    border-color: #444; /* Borde gris oscuro */
+    background-color: #1e1e1e; /* Fondo del contenedor */
+  }
+  
+  /* Asegurarse de que el cuadro de visualización tenga estilos consistentes */
+  body.dark-mode .right {
+    border-color: #444;
+  }
+  
+  /* Transiciones suaves para todo */
+  body.dark-mode *,
+  body.dark-mode button {
+    transition: all 0.1s ease;
+  }
+
+  body.dark-mode .label-correcto{
+    color: #e0e0e0; /* Texto claro */
+  }
+  body.dark-mode .label-error{
+    color: #e0e0e0; /* Texto claro */
+  }
+  body.dark-mode .label{
+    color: #e0e0e0; /* Texto claro */
+  }
